@@ -4,7 +4,7 @@ super + Return
 
 # program launcher
 super + d 
-	~/.config/rofi/launchers/type-4/launcher.sh
+	bash ~/.config/rofi/launchers/type-4/launcher.sh
 
 # browser
 super + w
@@ -18,6 +18,13 @@ super + e
 super + shift + c 
 	pkill -USR1 -x sxhkd
 
+# powermenu
+super + Escape
+    bash ~/.config/rofi/powermenu/type-1/powermenu.sh
+
+# screenshot
+super + shift + s
+	flameshot gui -p ~/Pictures/ss/
 #
 # bspwm hotkeys
 #
