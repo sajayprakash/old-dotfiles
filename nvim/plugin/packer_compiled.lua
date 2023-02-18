@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/sajay/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/sajay/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/sajay/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -181,9 +186,15 @@ _G.packer_plugins = {
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
+    config = { "\27LJ\2\nf\0\0\5\0\5\0\t6\0\0\0006\2\1\0'\4\2\0B\2\2\0029\2\3\0025\4\4\0B\2\2\0A\0\0\1K\0\1\0\1\0\1\14with_sync\2\vupdate\28nvim-treesitter.install\frequire\npcall\0" },
     loaded = true,
     path = "/home/sajay/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-textobjects"] = {
+    loaded = true,
+    path = "/home/sajay/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
   ["nvim-web-devicons"] = {
     loaded = false,
@@ -234,6 +245,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\nf\0\0\5\0\5\0\t6\0\0\0006\2\1\0'\4\2\0B\2\2\0029\2\3\0025\4\4\0B\2\2\0A\0\0\1K\0\1\0\1\0\1\14with_sync\2\vupdate\28nvim-treesitter.install\frequire\npcall\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
